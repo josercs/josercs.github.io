@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none; 
+}
+
+body{
+ font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+background-image: url(../img/fundo.png);
+background-size: cover;
+transition: .5s;
+}
+
+main{
+    /* transform: rotate(180deg); */
+    transition: .5s;
+    margin: auto;
+    border: 2px solid;
+    width: 520px;
+    height: 520px;
+    margin-top: 5px;
+    background-image: url(../img/boxClara2.png);
+    background-size: cover;
+}
+
+table{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border: 2px solid;
+    background-color: gray;
+    margin-top: 8px;
+}
+
+td{
+    border: 2.5px solid;
+}
+
+td div{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 80%;
+}
+
+.claras{
+    background-color: sandybrown;
+    background-image: url(../img/claras.png);
+    background-size: cover;
+}
+
+.escuras{
+    background-color:  brown;
+    background-image: url(../img/escuras.png);
+    background-size: cover;
+}
+
+.rainhaClara{
+    background-image: url(../img/clarasRainha.png);
+    background-size: cover;
+}
+
+.rainhaEscura{
+    background-image: url(../img/escurasRainha.png);
+    background-size: cover;
+}
+
+td:hover{
+    border-color: blue;
+}
+
+tr:nth-of-type(odd) td:nth-of-type(odd), tr:nth-of-type(even) td:nth-of-type(even){
+    background-color: black;
+    background-image: url(../img/boxEscura2.png);
+    background-size: cover;
+}
+
+tr:nth-of-type(odd) td:nth-of-type(even), tr:nth-of-type(even) td:nth-of-type(odd){
+    background-color: white;
+    background-image: url(../img/boxClara1.png);
+    background-size: cover;
+}
+#infoContainer {
+    margin-top: 2px;
+    font-size: 1em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #pecasRestantes {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    td {
+      width: 30px;
+      height: 30px;
+    }
+  
+    td div {
+      width: 25px;
+      height: 25px;
+    }
+  
+    #jogadorAtual {
+      font-size: 1em;
+    }
+  }
